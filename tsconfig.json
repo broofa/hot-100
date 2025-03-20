@@ -1,0 +1,22 @@
+{
+	"compilerOptions": {
+		"lib": ["esnext"],
+		"target": "esnext",
+		"module": "esnext",
+		"allowImportingTsExtensions": true,
+		"moduleResolution": "bundler",
+		"rootDir": "./src",
+		"noEmit": true,
+		"types": ["node"],
+		"strict": true,
+		"forceConsistentCasingInFileNames": true,
+		"moduleDetection": "force",
+		"noUncheckedIndexedAccess": true,
+		"exactOptionalPropertyTypes": true,
+		"verbatimModuleSyntax": true,
+		"isolatedModules": true,
+		"composite": true,
+		"skipLibCheck": true
+	},
+	"include": ["./src"]
+}

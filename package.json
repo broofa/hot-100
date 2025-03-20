@@ -1,0 +1,15 @@
+{
+  "name": "hot-100-analysis",
+  "type": "module",
+  "scripts": {
+    "start": "npx tsx src/analyze.ts",
+    "watch": "npx tsx --watch src/analyze.ts"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "22.13.10",
+    "csv-string": "4.1.1",
+    "tsx": "4.19.3",
+    "typescript": "5.8.2"
+  }
+}
