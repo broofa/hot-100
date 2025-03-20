@@ -147,6 +147,7 @@ console.log('# of songs:', firstSongWeeks.size);
 console.log();
 
 console.log('Years since first appearance by performer,# of reappearances');
-for (const [years, count] of yearsSinceFirstAppearance) {
+for (const years of [...yearsSinceFirstAppearance.keys()].sort((a, b) => (a - b))) {
+  const count = yearsSinceFirstAppearance.get(years);
   console.log(`${years},${count}`);
 }
