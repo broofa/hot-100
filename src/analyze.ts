@@ -141,13 +141,17 @@ for (const [, songWeek] of firstSongWeeks) {
   }
 }
 
-console.log('# of performers:', firstPerformerWeeks.size);
+console.log();
+
+console.log('# of performers with > 1 song on list:', firstPerformerWeeks.size);
 console.log('# of songs:', firstSongWeeks.size);
 
 console.log();
 
-console.log('Years since first appearance by performer,# of reappearances');
-for (const years of [...yearsSinceFirstAppearance.keys()].sort((a, b) => (a - b))) {
+console.log('Years Since Artist First Appeared on Hot 100 List, # of Songs');
+for (const years of [...yearsSinceFirstAppearance.keys()].sort(
+  (a, b) => a - b
+)) {
   const count = yearsSinceFirstAppearance.get(years);
   console.log(`${years},${count}`);
 }
